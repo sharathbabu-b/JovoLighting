@@ -12,9 +12,7 @@ a {
   color: inherit;
 }
 
-/* --------------------------------
-   Navbar Wrapper
--------------------------------- */
+
 .navbar1-wrapper {
   width: 100%;
   background-color: black;
@@ -26,14 +24,14 @@ a {
   padding: 12px 0;
 }
 
-/* Container */
+
 .container2-default {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* Navbar Content Layout */
+
 .navbar2-content {
   display: flex;
   justify-content: space-between;
@@ -42,13 +40,13 @@ a {
   position: relative;
 }
 
-/* Nav Sides */
+
 .nav2-side {
   display: flex;
   align-items: center;
 }
 
-/* Desktop Menu */
+
 .nav2-menu {
   display: flex;
   list-style: none;
@@ -67,15 +65,13 @@ a {
   color: #f0f3f7;
 }
 
-/* Logo */
+
 .nav2-logo img {
   height: 50px;
   width: auto;
 }
 
-/* --------------------------------
-   Hamburger Menu Button
--------------------------------- */
+
 .hamburger2 {
   display: none;
   flex-direction: column;
@@ -95,7 +91,7 @@ a {
   transition: 0.3s ease-in-out;
 }
 
-/* Hamburger Open Animation */
+
 .hamburger2.open .bar:nth-child(1) {
   transform: translateY(6px) rotate(45deg);
 }
@@ -108,11 +104,9 @@ a {
   transform: translateY(-6px) rotate(-45deg);
 }
 
-/* --------------------------------
-   Mobile Dropdown Menu
--------------------------------- */
+
 .mobile-menu2 {
-  position: fixed; /* instead of absolute */
+  position: fixed; 
   top: 64px;
   left: 0;
   right: 0;
@@ -120,7 +114,7 @@ a {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
-  z-index: 1100; /* higher than navbar */
+  z-index: 1100; 
 }
 
 .mobile-menu2.open {
@@ -142,9 +136,6 @@ a {
   padding: 6px 0;
 }
 
-/* --------------------------------
-   Visibility Utilities
--------------------------------- */
 .hidden-on-tablet {
   display: flex;
 }
@@ -153,11 +144,7 @@ a {
   display: none;
 }
 
-/* --------------------------------
-   Responsive Breakpoints
--------------------------------- */
 
-/* -------- Mobile (≤767px) -------- */
 @media (max-width: 767px) {
   .navbar2-content {
     justify-content: center;
@@ -189,7 +176,7 @@ a {
   }
 }
 
-/* -------- Tablet (768px–991px) -------- */
+
 @media (min-width: 768px) and (max-width: 991px) {
   .container2-default {
     padding: 0 16px;
@@ -200,7 +187,7 @@ a {
   }
 }
 
-/* -------- Laptop (992px–1199px) -------- */
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .nav2-link {
     font-size: 16px;
@@ -211,14 +198,14 @@ a {
   }
 }
 
-/* -------- Desktop (1200px+) -------- */
+
 @media (min-width: 1200px) {
   .nav2-link {
     font-size: 17px;
   }
 }
 
-/* -------- Ultra-Wide (1600px+) -------- */
+
 @media (min-width: 1600px) {
   .container2-default {
     max-width: 1400px;

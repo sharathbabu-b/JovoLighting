@@ -117,7 +117,6 @@ Link{
 }
 .w-embed:before,
 .w-embed:after {
-
   grid-area: 1 / 1 / 2 / 2;
   display: table;
 }
@@ -174,10 +173,6 @@ Link{
 .video-icon svg {
   fill: #f9f6f6;
 } 
-
-
-
-
 .video-lightbox-overlay {
   position: fixed;
   top: 0;
@@ -190,13 +185,11 @@ Link{
   align-items: center;
   z-index: 9999;
 }
-
 .video-lightbox-content {
   position: relative;
   max-width: 90%;
   max-height: 90%;
 }
-
 .video-lightbox-close {
   position: absolute;
   top: -40px;

@@ -13,7 +13,7 @@
   transform-style: preserve-3d;
 }
 
-/* Card hover effect */
+
 .hover-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
@@ -29,7 +29,7 @@
 .image-wrapper {
   position: relative;
   display: inline-block;
-  max-width: 600px; /* adjust as needed */
+  max-width: 600px; 
   width: 100%;
 }
 

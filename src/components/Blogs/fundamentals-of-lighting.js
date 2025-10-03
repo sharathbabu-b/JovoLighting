@@ -1,7 +1,5 @@
 import Navbar from "../Lightingnavbar";
 import FooterBottom from "../Footerbottom";
-
-// import "./blogspages.css"
 import {Link} from "react-router-dom"
 export default function Blog1() {
   return (

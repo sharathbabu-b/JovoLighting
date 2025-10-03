@@ -48,7 +48,7 @@ export default function Event() {
         </video>
          <div className="gradient-overlay position-absolute w-100 h-100"></div>
 
-        {/* Overlay Content */}
+        
         <div className="overlay-text text-white text-center  mb-0px-3">
           <h1 className="display-4 fw-semibold py-4 ">Experience the Brilliance</h1>
         </div>
@@ -57,7 +57,7 @@ export default function Event() {
        <section className="event-section-home-v3  bg-black py-1">
       <div className="container">
         <div className="row g-5">
-          {/* First Video */}
+          
           <div className="col-12 col-md-6 position-relative">
             <div className="video-wrapper">
               <video
@@ -77,7 +77,7 @@ export default function Event() {
             </div>
           </div>
 
-          {/* Second Video */}
+         
           <div className="col-12 col-md-6 position-relative mt-5">
             <div className="video-wrapper">
               <video
@@ -116,7 +116,7 @@ export default function Event() {
         ))}
       </div>
 
-      {/* 🔹 Show button only when not all images are visible */}
+     
       {!isAllVisible && (
         <div className="text-center">
           <button

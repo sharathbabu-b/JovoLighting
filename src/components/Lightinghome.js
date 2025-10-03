@@ -1,4 +1,3 @@
-// import { Link } from "react-router-dom"
 import homebanner1 from "../assets/LightingImages/Homeimages/Home-banner-1.jpeg"
 import bulbicon from "../assets/LightingImages/Homeimages/hanging-bulb-icon.png"
 import patioimage from "../assets/LightingImages/Homeimages/patio-heater.png"

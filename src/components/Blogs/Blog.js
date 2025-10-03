@@ -63,13 +63,13 @@ export default function Blog() {
     <>
       <Navbar />
 
-      {/* Hero Section */}
+      
       <section className="section top-50 py-5 bg-black mt-5">
         <div className="container text-center overflow-hidden">
           <h1 className="display-1 mb-1 text-light ps-2">Our Blog</h1>
         </div>
 
-        {/* Hero Blog Card */}
+       
         <div className="container m-1">
           <div className="row justify-content-center">
             <div className="col-md-8 mb-5 mt-3 px-3">
@@ -77,7 +77,7 @@ export default function Blog() {
                 <div className="card blog-card border-0 shadow-lg overflow-hidden bg-dark text-white">
                   <div className="position-relative">
                     <img
-                      src="https://jovoindia.com/images/our-blog.jpg"
+                      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJFTqsagGGMsFCwyGO82x4PwShFZk8T8W5nYOfqgLjpl6pcY44AWzORY8pPLaROkxxwMRAAilLK6MTNKgo3MTDMPG-Bg3HxNvEYfDAF7FcVAYoJHIcQebNwhL329O3pvLR6W1UhJZzxu5n8_f_o452aGYkI00DFxRDOalLdbBD-KbHtLW8gEQrL2A41UY8/s4032/IMG_5102.jpg"
                       alt="Fundamentals of Lighting"
                       className="card-img w-100 hover-zoom"
                       style={{ height: "300px", objectFit: "cover" }}
@@ -102,7 +102,7 @@ export default function Blog() {
         </div>
       </section>
 
-      {/* Latest Articles */}
+    
       <section className="bg-black py-3">
         <div className="container-default mx-auto">
           <div className="row align-items-center mb-4">
@@ -128,7 +128,7 @@ export default function Blog() {
             ))}
           </div>
 
-          {/* Pagination Controls */}
+         
           <div className="d-flex justify-content-center mt-4">
             <nav>
               <ul className="pagination pagination-dark">
