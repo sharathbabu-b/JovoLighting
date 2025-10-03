@@ -59,10 +59,10 @@ export default function FAQSection() {
   ];
 
   return (
-    <section className="section-gap-bottom  py-3">
+    <section className="section-gap-bottom py-3">
       <div className="container-default">
         <div className="faq-wrapper">
-          
+          {/* Section heading */}
           <div className="section-top text-center mb-4 fs-5">
             <div className="d-flex align-items-center justify-content-center mb-2 mt-3">
               <img
@@ -72,29 +72,32 @@ export default function FAQSection() {
               />
               <h5 className="subtitle mb-0">FAQs</h5>
             </div>
-           
           </div>
-          <div className="d-flex  justify-content-center py-4 ms-2">
-            <h3 className="fw-semi display-3 fs-2">Frequently Asked Questions</h3></div>
 
-        
-          <div className="faq-items-wrapper ">
+          <div className="d-flex justify-content-center py-4 ms-2">
+            <h3 className="fw-semibold display-3 fs-2">
+              Frequently Asked Questions
+            </h3>
+          </div>
+
+          {/* FAQ items */}
+          <div className="faq-items-wrapper">
             {faqData.map((item, index) => (
               <div key={index} className="faq-item">
                 <div
                   className="faq-toggle-wrapper"
                   onClick={() => toggleFAQ(index)}
                 >
-                  <h3 className="faq-title ">{item.question}</h3>
+                  <h3 className="faq-title">{item.question}</h3>
                   <div className="faq-icon-block">
                     <div className="faq-icon-line-horizontal"></div>
-                   <div
-  className="faq-icon-line-vertical"
-  style={{
-    transform: activeIndex === index ? "scaleY(0)" : "scaleY(1)",
-  }}
-></div>
-
+                    <div
+                      className="faq-icon-line-vertical"
+                      style={{
+                        transform:
+                          activeIndex === index ? "scaleY(0)" : "scaleY(1)",
+                      }}
+                    ></div>
                   </div>
                 </div>
 

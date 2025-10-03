@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 .automation-section4 {
-   position: relative;
+  position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -15,21 +16,19 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-      z-index: 1;
+  z-index: 1;
 }
-.automation-section4::before{
-    content: "";
-    position: absolute;
-    top:0;
-    left:0;
-    right: 0;
-    bottom: 0;
-     background: rgba(0, 0, 0, 0.6);
-  z-index:-1;
 
+.automation-section4::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
 }
+
 .automation-section4.container {
-   position: relative; /* keep text above overlay */
+  position: relative;
   z-index: 1;
   max-width: 900px;
   width: 90%;
@@ -39,13 +38,21 @@
   align-items: center;
   justify-content: center;
 }
+
+@keyframes bgSlide4 {
+  0%   { background-image: url("https://jovoindia.com/images/access-point.jpg"); }
+  33%  { background-image: url("https://jovoindia.com/images/cameras.jpg"); }
+  66%  { background-image: url("https://jovoindia.com/images/poe-switches.jpg"); }
+  100% { background-image: url("https://jovoindia.com/images/access-point.jpg"); }
+}
+
 @media screen and (max-width: 767px) {
   .automation-section4 {
     padding: 60px 20px;
     text-align: center;
   }
 
-  .automation-section4 .automation-container {
+  .automation-section4.container {
     width: 100%;
     padding: 0 10px;
   }
@@ -60,20 +67,3 @@
     line-height: 1.6;
   }
 }
-
-
-@keyframes bgSlide4{
-    0%{
-        background-image: url("https://jovoindia.com/images/access-point.jpg");
-    }
-    33%{
-        background-image: url("https://jovoindia.com/images/cameras.jpg");
-    }
-    66%{
-        background-image: url("https://jovoindia.com/images/poe-switches.jpg");
-    }
-    100%{
-        background-image: url("https://jovoindia.com/images/access-point.jpg");
-    }
-    
-} 

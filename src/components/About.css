@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 .section-title {
   transform: translate3d(0, -20px, 0);
   opacity: 0;
@@ -10,42 +11,36 @@
   opacity: 1;
 }
 
-.new-jovo-about-image{
+.new-jovo-about-image {
   height: 812px;
 }
-.animated-image{
-  width:100%
+
+.animated-image,
+.animated-image1 {
+  width: 100%;
 }
-img{
+
+img {
   vertical-align: middle;
   max-width: 100%;
   display: inline-block;
+  border: 0;
 }
-img{
-  border:0;
-}
-*{
+
+* {
   box-sizing: border-box;
 }
 
-.animated-image1{
-  width: 100%;
-  
-}
-
-.section{
+.section {
   display: block;
 }
 
 .video-cta-section {
   position: relative;
-  
   overflow: hidden;
- 
 }
 
 .video-cta-wrapper {
-  
   z-index: 3;
   justify-content: center;
   align-items: center;
@@ -54,110 +49,58 @@ img{
   display: flex;
   position: relative;
 }
-.video-lightbox{
+
+.video-lightbox {
   justify-content: center;
   align-items: center;
   display: flex;
   position: relative;
 }
-.w-inline-block{
+
+.w-inline-block {
   max-width: 100%;
 }
-Link{
+
+/* Changed from 'Link' to 'a' */
+a {
   color: var(--colors---theme-black);
   text-decoration: none;
+  background-color: transparent;
 }
-Link{
-  background-color: #0000;
-}
+
 .video-icon-circle {
-  position:absolute;
+  position: absolute;
   width: 110px;
   height: 110px;
- 
   display: flex;
   align-items: center;
-   justify-content: center;
+  justify-content: center;
   animation: pulse 2s infinite;
- 
 }
 
-.video-icon-circle-border.circle-two{
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
-.video-icon-circle-border{
-  border: 1px solid var(--colors---theme-white);
-  border-radius: 50%;
-}
-.video-icon-circle-border.circle-one{
-  width:80%;
-  height: 80%;
-}
-.video-icon-circle-border{
-  border: 1px solid var(--colors---theme-white);
-  border-radius: 50%;
-}
-.video-icon-wrapper{
-  background-color: var(--colors---theme-white);
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  width: 75px;
-  height: 75px;
-  display: flex;
-}
-.video-icon{
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-.w-embed:before,
-.w-embed:after {
-  grid-area: 1 / 1 / 2 / 2;
-  display: table;
-}
-.w-embed:after {
-  clear: both;
-}
-.video-cta-bg {
-  position: absolute;
-  top: 0;
-  left: -10%;
-   width: 100vw;
-  height: 100vh;
-   background-image: linear-gradient(#03030326, #03030326), url("../assets/LightingImages/Tyd-11.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -1; 
-}
-
-.video-cta-bg-start-block{
-  z-index: 2;
-  display: flex;
-  position: absolute;
-  inset:0%;
-  overflow: hidden;
-}
-.video-cta-bg-scroll-start-bg{
-  z-index: 2;
-  flex: none;
-  width: 100%;
-  height: 600px;
-  position: relative;
-  transform: scale(1.1);
-}
- .video-icon-circle-border {
+.video-icon-circle-border {
   position: absolute;
   border-radius: 50%;
   border: 2px solid #fff;
-} */
+}
 
- .circle-one {
+.video-icon-circle-border.circle-one {
+  width: 80%;
+  height: 80%;
+}
+
+.video-icon-circle-border.circle-two {
+  width: 120%;
+  height: 120%;
+  top: -22%;
+  left: -23%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.circle-one {
   width: 100%;
   height: 100%;
 }
@@ -167,12 +110,68 @@ Link{
   height: 120%;
   top: -13%;
   left: -13%;
-} 
+}
 
+.video-icon-wrapper {
+  background-color: var(--colors---theme-white);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  display: flex;
+}
+
+.video-icon {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.w-embed:before,
+.w-embed:after {
+  grid-area: 1 / 1 / 2 / 2;
+  display: table;
+}
+
+.w-embed:after {
+  clear: both;
+}
+
+.video-cta-bg {
+  position: absolute;
+  top: 0;
+  left: -10%;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(#03030326, #03030326), url("../assets/LightingImages/Tyd-11.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.video-cta-bg-start-block {
+  z-index: 2;
+  display: flex;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.video-cta-bg-scroll-start-bg {
+  z-index: 2;
+  flex: none;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  transform: scale(1.1);
+}
 
 .video-icon svg {
   fill: #f9f6f6;
-} 
+}
+
 .video-lightbox-overlay {
   position: fixed;
   top: 0;
@@ -185,11 +184,13 @@ Link{
   align-items: center;
   z-index: 9999;
 }
+
 .video-lightbox-content {
   position: relative;
   max-width: 90%;
   max-height: 90%;
 }
+
 .video-lightbox-close {
   position: absolute;
   top: -40px;
@@ -199,4 +200,4 @@ Link{
   border: none;
   color: #fff;
   cursor: pointer;
-} 
+}

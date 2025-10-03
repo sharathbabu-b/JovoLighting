@@ -5,22 +5,16 @@
   margin: 0 20px;          
 }
 
-input.form-control {
-  height: 50px;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 50px;
-}
-
-form {
-  font-size: 16px;
-}
-
 input.form-control,
 textarea.form-control {
   padding: 15px 20px;
   font-size: 16px;
   border-radius: 50px;
+  box-sizing: border-box;
+}
+
+input.form-control {
+  height: 50px;
 }
 
 textarea.form-control {
@@ -35,10 +29,22 @@ label.form-label {
 button.btn {
   font-size: 16px;
   padding: 10px 30px;
+  cursor: pointer;
 }
+
+.is-invalid {
+  border-color: #dc3545;
+}
+
+.invalid-feedback {
+  color: #dc3545;
+  font-size: 0.875em;
+}
+
+/* Media Queries */
 @media (max-width: 768px) {
   .contact-info-separator {
-    display: none !important;
+    display: none;
   }
 
   .hero-section h1 {
@@ -68,44 +74,37 @@ button.btn {
 @media (max-width: 576px) {
   .form-control,
   .btn {
-    width: 100%;;
+    width: 100%;
   }
 
   .rounded-pill {
     border-radius: 20px !important;
   }
 }
-.is-invalid {
-  border-color: #dc3545;
-}
-
-.invalid-feedback {
-  color: #dc3545;
-  font-size: 0.875em;
-}
-
 
 @media (max-width: 767px) {
   .contact-info-separator {
     display: none;          
-}
-.cta-video-wrapper {
-  
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50%;   
-  z-index: 1;
-  overflow: hidden;
-}
+  }
 
-.cta-video-wrapper video {
-  width: 100%;
-  height: 440px;
-  object-fit: cover; 
-}
-.cta-button-wrapper a:hover svg {
-  transform: translateX(4px);
-  transition: transform 0.3s ease;
-}
+  .cta-video-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;   
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .cta-video-wrapper video {
+    width: 100%;
+    height: 440px;
+    object-fit: cover; 
+  }
+
+  .cta-button-wrapper a:hover svg {
+    transform: translateX(4px);
+    transition: transform 0.3s ease;
+  }
 }

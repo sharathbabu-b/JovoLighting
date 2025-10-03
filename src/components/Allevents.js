@@ -1,5 +1,5 @@
 import React from 'react';
-import './EventGallery.css'; // We'll define styles separately
+import './EventGallery.css'; 
 
 const eventImages = [
  "https://jovoindia.com/images/events/event-20.jpg",

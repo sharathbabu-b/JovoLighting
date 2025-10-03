@@ -13,7 +13,6 @@
   transform-style: preserve-3d;
 }
 
-
 .hover-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
@@ -22,9 +21,6 @@
   transform: translateY(-5px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
-
-
-
 
 .image-wrapper {
   position: relative;
@@ -50,14 +46,16 @@
   display: block;
   height: auto;
 }
- @media screen And (max-width:1024) {
 
-  
- }
- .pagination-dark .page-link {
+@media screen and (max-width: 1024px) {
+  /* Add responsive styles here */
+}
+
+.pagination-dark .page-link {
   color: rgb(245, 238, 238);
   background-color: #fbf5f5;
-  margin: 0 3px; border-radius: 20px;
+  margin: 0 3px; 
+  border-radius: 20px;
 }
 
 .pagination-dark .active .page-link {

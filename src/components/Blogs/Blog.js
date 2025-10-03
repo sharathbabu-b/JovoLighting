@@ -57,7 +57,7 @@ export default function Blog() {
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = blogPosts.slice(indexOfFirstPost, indexOfLastPost);
 
-  const totalPages = Math.ceil(blogPosts.length / postsPerPage);
+  const totalPages = Math.ceil(blogPosts.length/postsPerPage);
 
   return (
     <>
@@ -84,7 +84,7 @@ export default function Blog() {
                     />
                     <div className="position-absolute top-50 end-0 translate-middle-y bg-dark bg-opacity-50 text-end p-4 rounded max-w-50 justify-content-end py-3 ms-3">
                       <div className="d-flex justify-content-end align-items-center mb-2">
-                        <small className="me-2">Mahesh Surasgar</small>
+                        <small className="me-2 fs-4">Mahesh Surasgar</small>
                         <div className="vr mx-2 bg-white"></div>
                         <small>Jun 29, 2023</small>
                       </div>

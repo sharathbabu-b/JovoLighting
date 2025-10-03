@@ -13,8 +13,6 @@ export default function FooterTop() {
           <div className="col-lg-6 mb-4 mb-lg-0">
             <h2 className="fw-bold" style={{fontFamily:"Montserrat Alternates, sans-serif"}}>Where your next breakthrough begins</h2>
           </div>
-
-       
           <div className="col-lg-6">
             <p className="lead" style={{textAlign:"justify",wordSpacing:"normal"}}>
               Facilitating seamless integration across platforms,we're here to
@@ -36,8 +34,8 @@ export default function FooterTop() {
         backgroundColor: "#FFE797",
         color: "#000",
        
-        width: "100%", // optional: for full width on mobile
-        maxWidth: "200px", // keeps button size in check
+        width: "100%", 
+        maxWidth: "200px", 
       }}
       className=" btn-primary rounded-pill d-flex align-items-center gap-2 justify-content-center px-4 py-2 w-100 w-sm-auto"
     >
@@ -64,7 +62,6 @@ export default function FooterTop() {
           <FaWhatsapp size={24} />
         </button>
       </Link>
-
       <hr className="mt-5" />
     </div>
   );

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 :root {
-  --neutral--100: #f0f0f0; /* adjust to your neutral value if needed */
+  --neutral--100: #f0f0f0; 
 }
 
 .hero-section {

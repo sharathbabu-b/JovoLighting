@@ -17,7 +17,7 @@ export default function AutomationNavbar() {
     <nav className="navbar1-wrapper">
       <div className="container2-default">
         <div className="navbar2-content">
-          {/* Left Side - Desktop Menu */}
+         
           <div className="nav2-side hidden-on-tablet">
             <ul className="nav2-menu">
               <li><Link to="/" className="nav2-link">Home</Link></li>
@@ -25,14 +25,14 @@ export default function AutomationNavbar() {
             </ul>
           </div>
 
-          {/* Logo */}
+         
           <div className="nav2-logo">
             <Link to="/" className="logo2-link">
               <img src={jovopng} alt="Logo" />
             </Link>
           </div>
 
-          {/* Right Side - Desktop Menu */}
+         
           <div className="nav2-side hidden-on-tablet">
             <ul className="nav2-menu">
               <li><Link to="/Blog" className="nav2-link">Blogs</Link></li>
@@ -40,7 +40,7 @@ export default function AutomationNavbar() {
             </ul>
           </div>
 
-          {/* Mobile Menu */}
+        
           <div className="nav2-side mobile-only">
             <button
               className={`hamburger2 ${isOpen ? "open" : ""}`}
