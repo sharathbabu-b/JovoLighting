@@ -67,7 +67,7 @@
   border-radius: 12px;
 }
 
-/* Gradient overlay */
+
 .video-gradient {
   position: absolute;
   inset: 0;
@@ -75,7 +75,7 @@
   z-index: 1;
 }
 
-/* Overlay text */
+
 .video-overlay-text {
   position: absolute;
   top: 50%;
@@ -84,12 +84,12 @@
   z-index: 2;
 }
 
-/* Ensure video covers container */
+
 .object-fit-cover {
   object-fit: cover;
 }
 
-/* Responsive height */
+
 @media (max-width: 768px) {
   .video-wrapper {
     height: 250px;

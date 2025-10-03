@@ -1,104 +1,4 @@
-/* 
-/* Base styles */
-/* body {
-  background-color: #000;
-  color: #f1f1f1;
-  font-family: 'Montserrat Alternates', sans-serif;
-  margin: 0;
-  padding: 0;
-}
- .section.top.bottom {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
 
-.container-default {
-  max-width: 1328px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
-
-.inner-container._885px.center {
-  max-width: 885px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.flex-horizontal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 12px;
-}
-
-.text-200 {
-  font-size: 14px;
-  font-weight: 500;
-  color: #f1f1f1;
-}
-
-.divider-details.large {
-  width: 56px;
-  height: 1px;
-  background-color: #999;
-}
-
-.display-2.blog-post-page-title {
-  font-size: 42px;
-  font-weight: 700;
-  margin: 24px 0;
-  color: #fff;
-}
-
-.image-wrapper.hero-section-image---blog-post-page {
-  position: relative;
-  margin-top: 40px;
-  border-radius: 12px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.image {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 12px;
-  object-fit: cover;
-  z-index: 0;
-} */
-
-/* /* Gradient overlay * 
-.image-gradient.hero-section-image---blog-post-page {
-  position: absolute;
-  inset: 0;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
-  z-index: 1;
-  pointer-events: none;
-  border-radius: 12px;
-}
-
-/* /* Responsive adjustments * *
-@media (max-width: 768px) {
-  .display-2.blog-post-page-title {
-    font-size: 32px;
-  }
-
-  .image-wrapper.hero-section-image---blog-post-page {
-    margin-top: 24px;
-    
-  }
-} 
-
-.flex-horizontal.gap-column-8px {
-  grid-column-gap: 8px;
-} */
 body {
   background-color: var(--neutral--800);
   color: var(--neutral--400);
@@ -185,30 +85,12 @@ body {
   margin: 0 12px;
 }
 
-/* .image-wrapper {
-  display: flex;
-  justify-content: center;  
-  align-items: center;
-  overflow: hidden;
-  margin-top: 40px;
-  position: relative;
-}
-
-.image-wrapper img.image {
-  max-width: 100%;
-  height: 70px;
-  border-radius: 8px;
-  display: block;
-  margin: 0 20px;
-  max-height: 900px; 
-  object-fit: cover;
-} */
 
 
 .hero-image-wrapper {
   position: relative;
   width: 100%;
-  height: 100vh; /* Full screen height for desktop */
+  height: 100vh; 
   overflow: hidden;
 }
 

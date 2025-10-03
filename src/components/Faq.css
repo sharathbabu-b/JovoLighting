@@ -1,16 +1,16 @@
-/* Wrapper */
+
 .faq-wrapper {
   max-width: 1000px;
   margin: 0 auto;
 }
 
-/* Each item */
+
 .faq-item {
   border-bottom: 3px solid #e5e5e5;
   padding: 15px 0;
 }
 
-/* Toggle row */
+
 .faq-toggle-wrapper {
   display: flex;
   justify-content: space-between;
@@ -18,7 +18,7 @@
   cursor: pointer;
 }
 
-/* Question */
+
 .faq-title {
   font-size: 16px;
   font-weight: 600;
@@ -27,12 +27,12 @@
   padding: 4px
 }
 
-/* Icon (+ / -) */
+
 .faq-icon-block {
-  width: 40px;               /* Diameter of the circle */
+  width: 40px;             
   height: 40px;
-  border: 1px solid #000;    /* Black border */
-  border-radius: 50%;         /* Makes it circular */
+  border: 1px solid #000;    
+  border-radius: 50%;       
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,14 +66,14 @@
   width: 1px;
   height: 18px;
   position: absolute;
-  top: 11px;  /* matches Webflow positioning */
-  left: 19px; /* matches Webflow positioning */
+  top: 11px;  
+  left: 19px; 
   transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
   transition: all 0.3s ease;
 }
 
-/* Answer content */
+
 .faq-content-wrapper {
   max-height: 0;
   overflow: hidden;
@@ -81,7 +81,7 @@
 }
 
 .faq-content-wrapper.open {
-  max-height: 500px; /* big enough for any answer */
+  max-height: 500px; 
 }
 
 .faq-content {
@@ -91,7 +91,7 @@
   line-height: 1.6;
 }
 
-/* Subtitle + Heading */
+
 .subtitle {
   color: #000305;
   font-weight:"semi";

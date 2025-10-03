@@ -224,8 +224,8 @@ image:Testimonial,
                   style={{ width: "60px" }}
                 />
                 <h3 className="fw-bold">Mission</h3>
-                <h5 className="mt-3 fs-4">Craft Cutting-Edge Solutions:</h5>
-                <ul >
+                <h5 className="mt-3 fs-4 m-4 ">Craft Cutting-Edge Solutions:</h5>
+                <ul className="fs-5" >
                   <li>
                     Focus on enhancing consumer experiences while maintaining
                     superior quality standards.
@@ -235,8 +235,8 @@ image:Testimonial,
                     practices.
                   </li>
                 </ul>
-                <h5 className="mt-4 m-3 ">Foster a Win-Win-Win Ecosystem:</h5>
-                <ul>
+                <h5 className="mt-4 m-3 fs-4 ">Foster a Win-Win-Win Ecosystem:</h5>
+                <ul className="fs-5">
                   <li>Win for customers through value and satisfaction.</li>
                   <li>Win for team members through growth and recognition.</li>
                   <li>
@@ -262,11 +262,10 @@ image:Testimonial,
               />
               <h3 className="fw-semibold text-start" style={{fontSize:"20px"}}>Mr. Mahesh Surasgar</h3>
               <h5 className="fw-semi text-start" style={{fontSize:"18px"}}>Founder & Managing Director</h5>
-              <p className=" mb-4 py-3" style={{textAlign: "justify"}}>
+              <p className=" mb-4 py-3" style={{textAlign: "justify" ,fontSize:"16px"}}>
 Mr. Mahesh Surasgar, Founder of JÖVÖ India, is a visionary entrepreneur with over a decade of expertise in architectural LED lighting. With a background in Advanced Strategic Management from IIM Lucknow, he has successfully led JÖVÖ India to become a pioneer in innovative lighting solutions, renowned for quality, customization, and design excellence. Alongside his strategic leadership, Mr. Surasgar also possesses deep technical expertise in architectural and commercial lighting design, LED system integration, smart lighting technologies, and energy-efficient solutions.
               </p>
             </div>
-
             <div className="col-md-4 text-center ">
               <img
                 src="https://jovoindia.com/images/shashirekha.webp"
@@ -275,7 +274,7 @@ Mr. Mahesh Surasgar, Founder of JÖVÖ India, is a visionary entrepreneur with o
               />
               <h5 className="fw-semibold text-md-start">Dr. Shashirekha Surasgar</h5>
               <h5  className="text-md-startfw-semi"style={{textAlign:"justify",fontSize:"18px"}}>Co-Founder| MBBS, MD | Diabetologist | Researcher</h5>
-              <p className=" py-0align-items-center" style={{textAlign:"justify"}}>
+              <p className=" py-0align-items-center" style={{textAlign:"justify",fontSize:"16px"}}>
               Dr. Shashirekha Surasgar is a renowned
                     Diabetologist and an
                     integral partner at JÖVÖ India. With a
@@ -296,7 +295,7 @@ Mr. Mahesh Surasgar, Founder of JÖVÖ India, is a visionary entrepreneur with o
               />
               <h3 className="text-start fw-semibold">Mr. Vishnu Kumar</h3>
               <h5  className="text-md-start "style={{textAlign:"justify" ,fontSize:"18px"}}>Co-Founder- JÖVÖ Automation LLP</h5>
-              <p className=" py-0 align-items-center " style={{textAlign:"justify"}}>
+              <p className=" py-0 align-items-center " style={{textAlign:"justify",fontSize:"16px"}}>
                 Vishnu Kumar brings a robust 13 years of professional experience across technical domains, IT, and networking infrastructure. His
                   expertise encompasses: <br/>  Technical & IT Leadership: Extensive hands-on experience in system servers, networking, and IT
                   operations. <br/> Network Structure Architecture: Skilled in designing and implementing efficient network architectures

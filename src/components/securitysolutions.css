@@ -22,7 +22,7 @@ body {
   animation: bgSlideSecurity 12s infinite ease-in-out;
 }
 
-/* Optional overlay for contrast */
+
 .automation-section2::before {
   content: "";
   position: absolute;
@@ -34,14 +34,14 @@ body {
   z-index: -1;
 }
 
-/* Title */
+
 .automation-section2 .automation-display-1 {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-/* Paragraph */
+
 .automation-section2 .automation-paragraph {
   font-size: clamp(1rem, 2.5vw, 1.25rem);
   line-height: 1.6;
@@ -57,7 +57,7 @@ body {
   100% { background-image: url("https://jovoindia.com/images/digital-door-locks.jpg"); }
 }
 
-/* Tablet */
+
 @media screen and (max-width: 1024px) {
   .automation-section2 {
     padding: 50px 15px;
@@ -74,7 +74,7 @@ body {
   }
 }
 
-/* Mobile */
+
 @media screen and (max-width: 767px) {
   .automation-section2 {
     padding: 40px 10px;
@@ -92,9 +92,9 @@ body {
 }
 
 
-/* Background animation */
 
-/* Client logos section */
+
+
 .client-logos-section {
   overflow: hidden;
   background-color: #f9f9f9;
@@ -136,7 +136,7 @@ body {
   100% { transform: translateX(-50%); }
 }
 
-/* ✅ Responsive Media Query Example */
+
 @media (max-width: 768px) {
   .automation-section2 {
     padding: 60px 15px;

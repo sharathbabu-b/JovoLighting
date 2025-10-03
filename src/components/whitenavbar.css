@@ -1,4 +1,4 @@
-/* Reset / base */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,7 +9,7 @@ body {
   font-family: Montserrat Alternates, sans-serif;
 }
 
-/* Header Wrapper */
+
 .main-header-wrapper {
   width: 100%;
   background-color: #fffafa;
@@ -35,14 +35,14 @@ body {
   height: 60px;
 }
 
-/* Nav sections */
+
 .nav-section-left,
 .nav-section-right {
   display: flex;
   align-items: center;
 }
 
-/* Logo */
+
 .logo-center {
   flex: 1;
   text-align: center;
@@ -57,7 +57,7 @@ body {
   width: auto;
 }
 
-/* Nav Menu */
+
 .nav-menu-list {
   list-style: none;
   display: flex;
@@ -77,7 +77,7 @@ body {
   padding: 8px 5px;
 }
 
-/* Dropdown */
+
 .dropdown {
   position: relative;
 }
@@ -120,7 +120,7 @@ body {
   display: flex;
 }
 
-/* Hamburger */
+
 .hamburger-toggle {
   display: none;
   flex-direction: column;
@@ -149,7 +149,7 @@ body {
   transform: translateY(-7.5px) rotate(-45deg);
 }
 
-/* Mobile menu */
+
 .nav-menu-wrapper {
   position: fixed;
   top: 70px;
@@ -178,7 +178,7 @@ body {
   padding: 10px 0;
 }
 
-/* Visibility helpers */
+
 .hide-on-tablet,
 .hide-secondary-on-tablet {
   display: flex;
@@ -188,7 +188,7 @@ body {
   display: none;
 }
 
-/* Responsive Styles */
+
 @media screen and (max-width: 768px) {
   .hide-on-tablet,
   .hide-secondary-on-tablet {
@@ -222,7 +222,7 @@ body {
     text-align: center;
   }
 
-  /* Adjust dropdown for mobile if needed */
+  
   .dropdown:hover .dropdown-content {
     display: none;
   }

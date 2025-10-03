@@ -4,7 +4,7 @@
   padding-right: 20px;
   row-gap: 40px;
 }
-/* Image zoom effect */
+
 .hover-zoom {
   transition: transform 0.4s ease;
 }
@@ -23,7 +23,7 @@
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
-/* Fundamentals of lighting  */
+
 
 
 .image-wrapper {
@@ -38,15 +38,15 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 30%; /* gradient height - adjust as needed */
+  height: 30%; 
   background-image: linear-gradient(to bottom, var(--neutral--800, rgba(0,0,0,0.7)), transparent);
   pointer-events: none;
-  border-top-left-radius: 0.5rem; /* match img rounded corners */
+  border-top-left-radius: 0.5rem; 
   border-top-right-radius: 0.5rem;
 }
 
 .img-fluid {
-  border-radius: 0.5rem; /* rounded corners */
+  border-radius: 0.5rem; 
   display: block;
   height: auto;
 }
