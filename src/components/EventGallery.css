@@ -1,0 +1,27 @@
+.jovo-event-images {
+  padding: 40px 20px;
+}
+
+.container-default {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 24px;
+}
+
+.event-item {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.event-image-grid {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
+}

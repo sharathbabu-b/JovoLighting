@@ -1,0 +1,111 @@
+.contact-info-separator {
+  background-color: #fff;   /* white line */
+  width: 2px;
+  height: 40px;             /* fixed height so it’s visible */
+  margin: 0 20px;           /* spacing around */
+}
+
+input.form-control {
+  height: 50px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 50px;
+}
+/* form.css */
+form {
+  font-size: 16px;
+}
+
+input.form-control,
+textarea.form-control {
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 50px;
+}
+
+textarea.form-control {
+  border-radius: 20px !important;
+}
+
+label.form-label {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+button.btn {
+  font-size: 16px;
+  padding: 10px 30px;
+}
+@media (max-width: 768px) {
+  .contact-info-separator {
+    display: none !important;
+  }
+
+  .hero-section h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .cta-button-wrapper {
+    justify-content: center;
+    display: flex;
+  }
+
+  form .form-control {
+    font-size: 14px;
+  }
+
+  h5.fs-5 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .form-control,
+  .btn {
+    width: 100%;;
+  }
+
+  .rounded-pill {
+    border-radius: 20px !important;
+  }
+}
+.is-invalid {
+  border-color: #dc3545;
+}
+
+.invalid-feedback {
+  color: #dc3545;
+  font-size: 0.875em;
+}
+
+
+@media (max-width: 767px) {
+  .contact-info-separator {
+    display: none;          /* hide on mobile so stacked layout looks clean */
+  }
+}
+.cta-video-wrapper {
+  
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;   /* Full section height */
+  z-index: 1;
+  overflow: hidden;
+}
+
+.cta-video-wrapper video {
+  width: 100%;
+  height: 440px;
+  object-fit: cover; /* cover instead of contain for no black bars */
+}
+.cta-button-wrapper a:hover svg {
+  transform: translateX(4px);
+  transition: transform 0.3s ease;
+}

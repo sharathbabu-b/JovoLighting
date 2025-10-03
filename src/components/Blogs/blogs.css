@@ -1,0 +1,67 @@
+.container-default {
+  max-width: 1440px;
+  padding-left: 20px;
+  padding-right: 20px;
+  row-gap: 40px;
+}
+/* Image zoom effect */
+.hover-zoom {
+  transition: transform 0.4s ease;
+}
+.hover-zoom:hover {
+  transform: scale3d(1.1, 1.1, 1);
+  transform-style: preserve-3d;
+}
+
+/* Card hover effect */
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Fundamentals of lighting  */
+
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+  max-width: 600px; /* adjust as needed */
+  width: 100%;
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 30%; /* gradient height - adjust as needed */
+  background-image: linear-gradient(to bottom, var(--neutral--800, rgba(0,0,0,0.7)), transparent);
+  pointer-events: none;
+  border-top-left-radius: 0.5rem; /* match img rounded corners */
+  border-top-right-radius: 0.5rem;
+}
+
+.img-fluid {
+  border-radius: 0.5rem; /* rounded corners */
+  display: block;
+  height: auto;
+}
+ @media screen And (max-width:1024) {
+
+  
+ }
+ .pagination-dark .page-link {
+  color: rgb(245, 238, 238);
+  background-color: #fbf5f5;
+  margin: 0 3px; border-radius: 20px;
+}
+
+.pagination-dark .active .page-link {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+}

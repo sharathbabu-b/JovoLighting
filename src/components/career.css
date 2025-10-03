@@ -1,0 +1,170 @@
+.career-section {
+  background: #0f0f0f;
+  color: #fff;
+  padding: 100px 30px;
+  margin-top: 40px;
+ 
+}
+
+.career-container {
+  max-width: 1200px;
+  margin: 0 auto;
+ 
+}
+
+.career-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.career-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Form bigger, Info smaller */
+  gap: 80px;
+}
+
+.career-form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.form-group label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #555;
+  color: #fff;
+  padding: 15px 0;
+  font-size: 1.1rem;
+  outline: none;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+.submit-btn {
+  background: #d6cbb5;
+  color: #000;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  align-self: flex-start; /* default for desktop */
+}
+
+.submit-btn:hover {
+  background: #c2b59b;
+}
+
+.career-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  white-space: nowrap;
+}
+
+.career-info p {
+  margin-bottom: 20px;
+  color: #bbb;
+  line-height: 1.6;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.info-item .icon {
+  font-size: 1.4rem;
+}
+
+/* ✅ Responsive Styles */
+@media (max-width: 1200px) {
+  .career-grid {
+    gap: 50px;
+  }
+
+  .form-row {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .career-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .career-heading {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .full-width {
+    grid-column: span 1;
+  }
+
+  /* ✅ Center button on tablets */
+  .submit-btn {
+    align-self: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .career-section {
+    padding: 60px 20px;
+  }
+
+  .career-heading {
+    font-size: 1.6rem;
+  }
+
+  .career-form {
+    gap: 25px;
+  }
+
+  .form-group label {
+    font-size: 1rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+
+  /* ✅ Full-width button on mobile */
+  .submit-btn {
+    width: 70%;
+    align-self: flex-start;
+    text-align: center;
+  }
+
+  .career-info h2 {
+    font-size: 1.5rem;
+  }
+}

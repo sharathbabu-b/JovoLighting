@@ -1,0 +1,105 @@
+/* Wrapper */
+.faq-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Each item */
+.faq-item {
+  border-bottom: 3px solid #e5e5e5;
+  padding: 15px 0;
+}
+
+/* Toggle row */
+.faq-toggle-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Question */
+.faq-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  color: #222;
+  padding: 4px
+}
+
+/* Icon (+ / -) */
+.faq-icon-block {
+  width: 40px;               /* Diameter of the circle */
+  height: 40px;
+  border: 1px solid #000;    /* Black border */
+  border-radius: 50%;         /* Makes it circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.faq-icon-line-horizontal,
+.faq-icon-line-vertical {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  background: #000;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease;
+}
+
+.faq-icon-line-horizontal {
+  background-color: #000;
+  width: 18px;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+.faq-icon-line-vertical {
+  background-color: #000;
+  width: 1px;
+  height: 18px;
+  position: absolute;
+  top: 11px;  /* matches Webflow positioning */
+  left: 19px; /* matches Webflow positioning */
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  transition: all 0.3s ease;
+}
+
+/* Answer content */
+.faq-content-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.faq-content-wrapper.open {
+  max-height: 500px; /* big enough for any answer */
+}
+
+.faq-content {
+  padding-top: 10px;
+  color: #0b0101;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Subtitle + Heading */
+.subtitle {
+  color: #000305;
+  font-weight:"semi";
+  margin-bottom: 5px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}

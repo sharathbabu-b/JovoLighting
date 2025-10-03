@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.automation-section1 {
+  background: #111;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  animation: bgSlide1 10s infinite ease-in-out;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  flex-direction: column;
+}
+
+
+.automation-section2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* dark overlay */
+  z-index:-1;
+}
+
+.automation-display-1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.automation-paragraph {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+
+
+
+@keyframes bgSlide1 {
+  0% {
+    background-image: url("../assets/automation-touch-pannel-1.jpg");
+  }
+  33%{
+    background-image: url("../assets/smart-cutrain-2.jpg");
+  }
+  66% {
+    background-image: url("../assets/smart-lights.jpg");
+  }
+  100% {
+    background-image: url("../assets/automation-touch-pannel\ -4.jpg");
+  }
+}
+
+    
+
+/* Tablet (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .automation-display-1 {
+    font-size: 32px;
+    line-height: 1.1;
+    font-weight: 600;
+  }
+
+  .automation-paragraph {
+    font-size: 1.1rem;
+    padding: 0 10px;
+  }
+
+  .automation-section1 {
+    padding: 50px 15px;
+  }
+}
+
+/* Mobile (Below 768px) */
+@media screen and (max-width: 767px) {
+  .automation-display-1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .automation-paragraph {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .automation-section1 {
+    padding: 40px 10px;
+  }
+}

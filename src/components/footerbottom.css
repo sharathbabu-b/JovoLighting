@@ -1,0 +1,92 @@
+/* footerbottom.css */
+body{
+  overflow: hidden;
+}
+/* ✅ Default (Desktop / large screens) */
+.dark-line {
+  background-color: #000; /* ensure black background */
+}
+
+.dark-line img {
+  height: 100px;
+}
+
+.dark-line h3 {
+  font-size: 15px;
+  margin: 0;
+  white-space: nowrap; /* prevent breaking into weird lines */
+}
+
+.dark-line .d-flex a {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+}
+
+/* 📱 Mobile (max-width: 576px) */
+@media (max-width: 576px) {
+  .dark-line {
+    flex-direction: column;   /* stack vertically */
+    text-align: center;
+    gap: 12px;
+  }
+
+  .dark-line img {
+    height: 70px;             /* smaller logo */
+  }
+
+  .dark-line h3 {
+    font-size: 13px;          /* smaller copyright text */
+  }
+
+  .dark-line .d-flex {
+    flex-wrap: wrap;          /* wrap icons neatly */
+    gap: 10px;
+  }
+
+  .dark-line .d-flex a {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+}
+
+/* 📲 Tablet (577px – 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .dark-line {
+    flex-direction: column; /* still stack */
+    text-align: center;
+    gap: 14px;
+  }
+
+  .dark-line img {
+    height: 80px;
+  }
+
+  .dark-line h3 {
+    font-size: 14px;
+  }
+
+  .dark-line .d-flex a {
+    width: 38px;
+    height: 38px;
+    font-size: 17px;
+  }
+}
+
+/* 💻 Large PC screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .dark-line img {
+    height: 110px; /* bigger logo on very large screens */
+  }
+
+  .dark-line h3 {
+    font-size: 16px;
+  }
+
+  .dark-line .d-flex a {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+}

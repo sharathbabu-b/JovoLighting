@@ -1,0 +1,186 @@
+/* Base styles - Desktop first */
+.intro-header-wrapper {
+  width: 100%;
+  background-color: #020000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: fixed;
+  z-index: 1000;
+  font-family: 'Montserrat Alternates', sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.intro-container-default {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.intro-home-header-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+/* Left menu & hamburger container */
+.intro-header-left-side {
+  display: flex;
+  align-items: center;
+}
+
+/* Nav menu wrapper */
+.intro-header-nav-menu-wrapper {
+  display: flex;
+}
+
+.intro-header-nav-menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.intro-header-nav-list-item {
+  margin: 0 15px;
+}
+
+.intro-header-nav-link {
+  text-decoration: none;
+  color: #f7f7f7;
+  font-weight: 500;
+  font-size: 17px;
+  transition: color 0.3s ease;
+}
+
+.intro-header-nav-link:hover {
+  color: #0077ff;
+}
+
+/* Logo center */
+.intro-header-middle {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.intro-header-logo-link img.intro-jovo-brandlogo {
+  height: 50px;
+  width: auto;
+}
+
+/* Right side nav */
+.intro-header-right-side {
+  display: flex;
+  align-items: center;
+}
+
+/* Hidden/Show helpers */
+.hidden-on-tablet {
+  display: block;
+}
+
+.show-in-tablet {
+  display: none;
+}
+
+/* Hamburger menu - hidden by default */
+.intro-hamburger-menu-wrapper {
+  cursor: pointer;
+  width: 30px;
+  height: 22px;
+  position: relative;
+  margin-left: 15px;
+  display: none; /* hidden on desktop */
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.intro-hamburger-menu-bar {
+  height: 4px;
+  background-color: #f6f4f4;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Hamburger animation when active */
+.intro-hamburger-menu-wrapper.active .top {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.intro-hamburger-menu-wrapper.active .bottom {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Responsive for Tablet and below */
+@media (max-width: 991px) {
+  /* Hide desktop nav items */
+  .hidden-on-tablet {
+    display: none !important;
+  }
+  /* Show tablet-only nav items */
+  .show-in-tablet {
+    display: block;
+  }
+
+  
+  
+  /* Hide right side nav */
+  .intro-header-right-side {
+    display: none;
+  }
+
+  /* Show hamburger */
+  .intro-hamburger-menu-wrapper {
+    display: flex;
+  }
+
+  /* Nav menu dropdown */
+  .intro-header-nav-menu-wrapper {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: rgb(7, 5, 5);
+    flex-direction: column;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 999;
+  }
+
+  /* Open state for dropdown */
+  .intro-header-nav-menu-wrapper.open {
+    max-height: 200px; /* enough for menu items */
+    margin-top: 4px;
+  }
+
+  /* Vertical list for nav */
+  .intro-header-nav-menu-list {
+    flex-direction: column;
+  }
+
+  .intro-header-nav-list-item {
+    margin: 15px 0;
+    text-align: center;
+  }
+}
+
+/* Desktop and up */
+@media (min-width: 992px) {
+  /* Hide hamburger on desktop */
+  .intro-hamburger-menu-wrapper {
+    display: none;
+  }
+
+  /* Show hidden elements */
+  .hidden-on-tablet {
+    display: block !important;
+  }
+
+  /* Hide tablet-only */
+  .show-in-tablet {
+    display: none;
+  }
+}

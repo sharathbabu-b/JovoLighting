@@ -1,0 +1,95 @@
+/* Import Montserrat Alternates font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap');
+
+/* Apply the font to elements with this class */
+.automation-font {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* ============================= */
+/*        AV SOLUTIONS CSS       */
+/* ============================= */
+
+.automation-section3 {
+  background: #121212; /* dark background */
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  flex-direction: column;
+  position: relative;
+  animation: bgSlideAV 12s infinite ease-in-out;
+}
+
+.automation-section3::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: -1;
+}
+
+.automation-section3 .automation-display-1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 20px;
+  /* font-family inherited from .automation-font */
+}
+
+.automation-section3 .automation-paragraph {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+  /* font-family inherited from .automation-font */
+}
+
+@keyframes bgSlideAV {
+  0% { background-image: url("https://jovoindia.com/images/theatre.jpg"); }
+  33% { background-image: url("https://jovoindia.com/images/home-theatre.jpg"); }
+  66% { background-image: url("https://jovoindia.com/images/projectors.jpg"); }
+  100% { background-image: url("https://jovoindia.com/images/theatre.jpg"); }
+}
+
+/* Responsive styling */
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+  .automation-section3 {
+    padding: 50px 15px;
+  }
+
+  .automation-section3 .automation-display-1 {
+    font-size: 32px;
+    line-height: 1.1;
+  }
+
+  .automation-section3 .automation-paragraph {
+    font-size: 1.1rem;
+    padding: 0 10px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .automation-section3 {
+    padding: 40px 10px;
+  }
+
+  .automation-section3 .automation-display-1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .automation-section3 .automation-paragraph {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+}

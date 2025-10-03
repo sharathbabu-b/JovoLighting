@@ -1,0 +1,288 @@
+/* lightingnavbar.css */
+
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+}
+
+.header1-wrapper {
+  width: 100%;
+  background: #0c0404;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  color:#fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* Container */
+.container1-default {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Flex container for header content */
+.home-header1-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+/* Logo centered */
+.header-middle {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.jovo-brandlogo {
+  height: 50px;
+  width: auto;
+  cursor: pointer;
+}
+
+/* Left and Right side nav */
+.header1-right-side,
+.header1-left-side {
+  display: flex;
+  align-items: center;
+}
+
+/* Nav list styles */
+.header1-nav-menu-list,
+.header-nav-menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+ 
+}
+
+.header1-nav-list-item,
+.header-nav-list-item {
+  margin-left: 20px;
+  position: relative;
+   gap:25px;
+}
+
+/* Links */
+.header1-nav-link,
+.header-nav-link {
+  color: #f6ecec;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.header1-nav-link:hover,
+.header-nav-link:hover,
+.dropdown-link:hover {
+  color: #007bff;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 12px;
+  font-weight: 500;
+  color: #e4dede;
+  transition: color 0.3s ease;
+}
+
+.dropdown-toggle:hover {
+  color: #007bff;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: none;
+  flex-direction: column;
+  min-width: 150px;
+  z-index: 10;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-link {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #222;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-link:hover {
+  background-color: #f0f0f0;
+}
+
+/* Hamburger menu styles */
+.hamburger1-menu-wrapper {
+  display: none; /* hidden on desktop */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 25px;
+  height: 22px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.hamburger1-menu-bar {
+  height: 3px;
+  width: 100%;
+  background-color: #efe8e8;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+/* Hamburger animation when active */
+.hamburger1-menu-wrapper.active .top {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger1-menu-wrapper.active .bottom {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile menu styles */
+.header-nav-menu-wrapper {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background: #000000;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  flex-direction: column;
+  z-index: 999;
+}
+
+.header-nav-menu-wrapper.open {
+  display: flex;
+}
+
+.header-nav-menu-list {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header-nav-list-item {
+  margin: 0;
+ 
+}
+
+.header-nav-link {
+  padding: 15px 20px;
+  display: block;
+}
+
+/* Responsive styles */
+
+/* Hide on tablet & smaller */
+.hidden-on-tablet {
+  display: flex;
+}
+
+/* Show only on tablet */
+.show-in-tablet {
+  display: none;
+}
+
+/* Correct typo */
+.hidden1-on-tablet {
+  display: flex;
+}
+
+/* Tablet and below (up to 1024px) */
+@media (max-width: 1024px) {
+  /* Hide right side navs on tablet */
+  .hidden-on-tablet,
+  .hidden1-on-tablet {
+    display: none;
+  }
+
+  /* Show hamburger menu */
+  .hamburger1-menu-wrapper {
+    display: flex;
+  }
+
+  /* Show tablet nav items in left side menu */
+  .show-in-tablet {
+    display: block;
+  }
+
+  /* Center logo less */
+  .header-middle {
+    flex: 1;
+    justify-content: center;
+  }
+  .jovo-brandlogo {
+  height: 50px;
+  width: auto;
+  cursor: pointer;
+}
+
+
+  /* Adjust container padding */
+  .container1-default {
+    padding: 0 15px;
+  }
+}
+
+/* Mobile phones (max 767px) */
+@media (max-width: 767px) {
+  .home-header1-content-wrapper {
+    height: 50px;
+  }
+
+  .header1-nav-link,
+  .header-nav-link,
+  .dropdown-toggle {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .jovo-brandlogo {
+    height: 50px;
+  }
+
+  /* Make the dropdown menu full width on mobile */
+  .dropdown-menu {
+    position: static;
+    border: none;
+    box-shadow: none;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: none; /* Disable hover on mobile */
+  }
+
+  /* Allow clicking dropdown toggle to open dropdown on mobile */
+  .dropdown-toggle:focus + .dropdown-menu,
+  .dropdown-toggle:active + .dropdown-menu {
+    display: flex;
+  }
+}

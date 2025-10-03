@@ -1,0 +1,164 @@
+body {
+  padding-top: 80px; /* adjust to navbar height */
+}
+body,
+h1, h2, h3, h4, h5, h6,
+p, a, li, button, input, textarea, div {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.why-choose-section h2.display-3 {
+  font-size: rem;
+  text-align: center;
+}
+
+.why-choose-section h5.fs-5 {
+  font-size: 1rem;
+}
+
+.why-choose-section p,
+.why-choose-section li {
+  font-size: 0.9rem;
+}
+
+.icon-size {
+  width: 40px;
+  height: 40px;
+}
+
+/* Small devices (≥576px) */
+@media (min-width: 576px) {
+  .why-choose-section h2.display-3 {
+    font-size: 2.5rem;
+  }
+
+  .icon-size {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* Medium devices (≥768px) */
+@media (min-width: 768px) {
+  .why-choose-section {
+    padding: 4rem 2rem;
+  }
+
+  .why-choose-section h2.display-3 {
+    font-size: 2.8rem;
+  }
+
+  .why-choose-section h5.fs-5 {
+    font-size: 1.15rem;
+  }
+}
+
+/* Large devices (≥992px) */
+@media (min-width: 992px) {
+  .why-choose-section h2.display-3 {
+    font-size: 3.2rem;
+  }
+
+  .icon-size {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Extra large devices (≥1200px) */
+@media (min-width: 1200px) {
+  .why-choose-section {
+    padding: 5rem 4rem;
+  }
+
+  .why-choose-section h2.display-3 {
+    font-size: 3.5rem;
+  }
+}
+
+/* .gradient-text {
+  background-image: linear-gradient(138deg, transparent, #6c757d 18%, #ffffff 72%, #ffffff 86%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; 
+} */
+
+
+.tag-line-animated-text {
+  animation: scaleFade 4s ease-in-out infinite;
+}
+@keyframes scaleFade {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}
+
+.btn-custom {
+  background-color: #d2caa8;
+  border: 2px solid #d2caa8;
+  color: #000; /* Change to #fff if you want white text */
+  transition: all 0.3s ease;
+}
+.btn-banner{
+     background-color: #fff;
+  padding: 3px;
+  color: #000; /* Change to #fff if you want white text */
+  transition: all 0.3s ease;
+    
+}
+
+.btn-custom:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+/* Make carousel arrows white and bigger */
+.custom-arrow {
+  filter: invert(1); /* makes Bootstrap default icons white */
+  width: 70px;
+  height: 60px;
+}
+
+/* Position arrows vertically center */
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Customize indicators (dots) */
+.carousel-indicators [data-bs-target] {
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  
+;
+}
+
+.carousel-indicators .active {
+  background-color: #ccc;
+}
+
+
+/* greyscale color */
+.hover-img {
+  transition: transform 0.4s ease;
+}
+.hover-img:hover {
+  transform: scale(1.1); /* zoom in */
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* optional: center horizontally */
+    padding-left: 15px;
+    padding-right: 15px;
+}
