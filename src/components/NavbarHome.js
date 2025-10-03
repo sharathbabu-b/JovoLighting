@@ -18,7 +18,7 @@ const IntropageNav = () => {
   <div className="intro-container-default w-container">
     <div className="intro-home-header-content-wrapper">
 
-      {/* Right Side Nav (hidden on tablet) */}
+      
       <div className="intro-header-right-side hidden-on-tablet">
         <ul className="intro-header-nav-menu-list">
           <li className="intro-header-nav-list-item left">
@@ -29,14 +29,14 @@ const IntropageNav = () => {
         </ul>
       </div>
 
-      {/* Logo */}
+   
       <div className="intro-header-middle">
         <Link to="/" className="intro-header-logo-link w-nav-brand">
           <img src={jovologo} alt="jovo logo" className="intro-jovo-brandlogo" />
         </Link>
       </div>
 
-      {/* Right Side Nav */}
+
       <div className="intro-header-right-side hidden-on-tablet">
         <ul className="intro-header-nav-menu-list">
           <li className="intro-header-nav-list-item left">
@@ -47,7 +47,7 @@ const IntropageNav = () => {
         </ul>
       </div>
 
-      {/* Left Side Menu & Hamburger */}
+      
       <div className="intro-header-left-side">
         <nav
           role="navigation"
@@ -67,7 +67,7 @@ const IntropageNav = () => {
           </ul>
         </nav>
 
-        {/* Hamburger Menu */}
+        
         <div
           className={`intro-hamburger-menu-wrapper w-nav-button ${menuOpen ? "active" : ""}`}
           onClick={toggleMenu}

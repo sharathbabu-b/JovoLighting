@@ -40,7 +40,7 @@ const BlogSection = () => {
   return (
     <section className="bg-black py-1">
       <div className="container-fluid">
-        {/* Header Row */}
+        
         <div className="row align-items-center mb-4 py-5 ms-1">
           <div className="col-md-8 py-5 px-4 ms-0">
             <h1 className="text-white mb-0 ms-2">Browse our articles & news</h1>
@@ -55,7 +55,7 @@ const BlogSection = () => {
           </div>
         </div>
 
-        {/* Blogs Row */}
+    
         <div className="ms-2 row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
          {sortedBlogList.map((blog, index) => (
   <div className="col" key={index}>

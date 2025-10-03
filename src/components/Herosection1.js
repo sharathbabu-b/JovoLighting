@@ -24,10 +24,7 @@ export default function HeroSection1() {
         }}>Automation</h1>
         <div className="text-center"></div>
       </div>
-       {/* <h1 className="hero-title"  style={{ fontFamily: "'Montserrat Alternates', sans-serif"
-          ,backgroundImage:"linear-gradient(138deg, transparent, var(--neutral--100) 18%, #ffffff 72%, #ffffff 86%);"
-        }}>Automation</h1>
-      </div> */}
+       
     </section>
   );
 }

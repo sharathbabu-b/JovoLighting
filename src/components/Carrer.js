@@ -14,7 +14,7 @@ export default function CareerFormSection() {
         <h1 className="career-heading">Build Your Future With Us</h1>
 
         <div className="career-grid">
-          {/* Left Form */}
+         
           <form className="career-form">
             <div className="form-row">
               <div className="form-group">
@@ -50,7 +50,7 @@ export default function CareerFormSection() {
             </button>
           </form>
 
-          {/* Right Info Section */}
+        
           <div className="career-info">
             <h2>Your Next Big Move Starts Here</h2>
             <p>

@@ -13,7 +13,7 @@ export default function Lightinghome() {
     <>
   
  <section className="position-relative pt-4 w-100 min-vh-100 overflow-hidden">
-  {/* Background Image */}
+  
   <img
     src={homebanner1}
     alt="homebanner"
@@ -21,7 +21,7 @@ export default function Lightinghome() {
     style={{ objectFit: "cover", zIndex: 0 }}
   />
 
-  {/* Overlay */}
+
   <div
     className="position-absolute top-0 start-0 w-100 h-100"
     style={{
@@ -30,7 +30,7 @@ export default function Lightinghome() {
     }}
   ></div>
 
-  {/* Content */}
+ 
   <div
     className="position-absolute top-50 start-50 translate-middle text-center text-white px-3 px-md-4"
     style={{ zIndex: 2 }}
@@ -65,7 +65,7 @@ export default function Lightinghome() {
  <div className="container-fluid ms-2 ">
   <div className="row g-4 gy-5">
 
-    {/* Box 1 */}
+   
     <div className="col-12 col-sm-6 col-lg-3">
       <div className="text-middle  h-100 d-flex flex-column">
         <img
@@ -80,7 +80,7 @@ export default function Lightinghome() {
       </div>
     </div>
 
-    {/* Box 2 */}
+
     <div className="col-12 col-sm-6 col-lg-3">
       <div className="text-start h-100 d-flex flex-column">
         <img
@@ -98,7 +98,7 @@ export default function Lightinghome() {
       </div>
     </div>
 
-    {/* Box 3 */}
+ 
     <div className="col-12 col-sm-6 col-lg-3">
       <div className="text-start h-100 d-flex flex-column">
         <img
@@ -115,7 +115,6 @@ export default function Lightinghome() {
       </div>
     </div>
 
-    {/* Box 4 */}
     <div className="col-12 col-sm-6 col-lg-3">
       <div className="text-start h-100 d-flex flex-column">
         <img
@@ -142,12 +141,12 @@ export default function Lightinghome() {
       <section className="bg-black text-white py-5 position-relative">
   <div className="container">
     <div className="row align-items-center g-4">
-      {/* Left Column: Heading */}
+      
       <div className="col-12 col-lg-6 mb-4 mb-lg-0">
         <h2 className="display-5 fw-semi ms-1 px-0">What our clients say</h2>
       </div>
 
-      {/* Right Column: Paragraph */}
+   
       <div className="col-15 col-lg-6  mt-4"> 
         <p className=" fw-semi  me-0 lh-base px-3" style={{textAlign:"justify",fontSize:"18px"}}>
           Discover how Jovo India's innovative lighting solutions have
@@ -174,11 +173,11 @@ export default function Lightinghome() {
           nextIcon={<span className="carousel-control-next-icon custom-arrow" />}
           prevIcon={<span className="carousel-control-prev-icon custom-arrow" />}
         >
-          {/* Slide 1 */}
+         
           <Carousel.Item>
             <div className="d-flex flex-column flex-lg-row align-items-center justify-content-center text-center position-relative py-5">
               
-              {/* Left Quote */}
+             
               <img
                 src="https://jovoindia.com/images/649dfc4cc47448084f44ed73_testimonial-left-image-architectr-x-webflow-template.svg"
                 alt="Left Quote"
@@ -186,7 +185,7 @@ export default function Lightinghome() {
                 style={{ width: "500px", opacity: 0.1 ,height:"300px"}}
               />
 
-              {/* Text Content */}
+             
               <div className="px-3 px-lg-5">
                 <h3 className="display-6 fw-bold mb-3 fs-5">
                   “If you’re seeking expert advice on selecting top-notch lighting”
@@ -198,7 +197,7 @@ export default function Lightinghome() {
                 <div className="fw-bold mt-3">Vaishnavi G</div>
               </div>
 
-              {/* Right Quote */}
+             
               <img
                 src="https://jovoindia.com/images/649dfc4c1c6bb70aa8f6dcd9_testimonial-right-image-architectr-x-webflow-template.svg"
                 alt="Right Quote"
@@ -208,11 +207,11 @@ export default function Lightinghome() {
             </div>
           </Carousel.Item>
 
-          {/* Slide 2 */}
+        
           <Carousel.Item>
             <div className="d-flex flex-column flex-lg-row align-items-center justify-content-center text-center position-relative py-5">
               
-              {/* Left Quote */}
+              
               <img
                 src="https://jovoindia.com/images/649dfc4cc47448084f44ed73_testimonial-left-image-architectr-x-webflow-template.svg"
                 alt="Left Quote"
@@ -220,7 +219,7 @@ export default function Lightinghome() {
                 style={{ width: "100px", opacity: 0.1 }}
               />
 
-              {/* Text Content */}
+         
               <div className="px-3 px-lg-5">
                 <h3 className="display-6 fw-bold mb-3 fs-5" >
                   “JOVO Lighting has been such a refreshing experience for us”
@@ -232,7 +231,7 @@ export default function Lightinghome() {
                 <div className="fw-bold mt-3">Preedesh M</div>
               </div>
 
-              {/* Right Quote */}
+             
               <img
                 src="https://jovoindia.com/images/649dfc4c1c6bb70aa8f6dcd9_testimonial-right-image-architectr-x-webflow-template.svg"
                 alt="Right Quote"
@@ -244,73 +243,7 @@ export default function Lightinghome() {
         </Carousel>
       </div>
     </section>
-<BlogSection/>
-    {/* <section className="bg-black py-1 " >
-  <div className="container-fluid  ">
-  
-    <div className="row align-items-center mb-4 py-5 ms-1">
-      <div className="col-md-8 py-5 px-4 ms-0">
-        <h1 className="text-white mb-0 ms-2">Browse our articles & news</h1>
-      </div>
-      <div className="  col-md-3 text-md-end mt-md-2 ms-2">
-        <button className="btn bg-dark btn-outline-light text-white rounded-pill btn-lg py-3 px-4">
-          Browse all articles
-        </button>
-      </div>
-    </div>
-
-    <div className="  ms-2 row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 ">
-
-      <div className="col">
-        <Link to="/blog1" >
-        <img
-          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJFTqsagGGMsFCwyGO82x4PwShFZk8T8W5nYOfqgLjpl6pcY44AWzORY8pPLaROkxxwMRAAilLK6MTNKgo3MTDMPG-Bg3HxNvEYfDAF7FcVAYoJHIcQebNwhL329O3pvLR6W1UhJZzxu5n8_f_o452aGYkI00DFxRDOalLdbBD-KbHtLW8gEQrL2A41UY8/s4032/IMG_5102.jpg"
-          alt="blogimage"
-          className="img-fluid rounded hover-img"
-          style={{ height: '400px', objectFit: 'cover', width: '100%' }}
-        />
-        <h1 className="text-light fs-4  py-3">Fundamentals of Lighting</h1>
-        <div className="text-light px-5">
--------Jul 03, 2023</div>
- </Link>
-      </div>
-     
-
-    
-      <div className="col">
-        <img
-          src="https://jovoindia.com/images/portfolio-images/Tyd-9.jpg"
-          alt="blogimage"
-          className="img-fluid rounded"
-          style={{ height: '400px', objectFit: 'cover', width: '100%' }}
-        />
-        <h1 className="text-white fs-4 py-3">5 Benefits of Lighting in Architecture and Interior Design</h1>
-        <div className="text-light px-5">---- jul 06,2023</div>
-      </div>
-      <div className="col">
-        <img
-          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdt1_PrKAoKTOUS3OvsWBOEQ_tQk9O1s5IMtXgk8s2aBNoagN1f9EwJR7IvTi0QBj36O9Shm7tZxTwrpLW62Iiw8vGfQiMVG42AqXR7LEMXCK9yQ_uFWuJAo2-xpNy2qof0d4DltDWyC02F2rwSQTITz4a4udMKV5Ns1w5BAQvLENCcJqq_H43609eTE48/s1792/82332BE0-6FB2-4A6C-A1FE-BD1969ED2BB7.jpeg"
-          alt="blogimage"
-          className="img-fluid rounded"
-          style={{ height: '400px', objectFit: 'cover', width: '100%' }}
-        />
-        <h1 className="text-light fs-4 py-3">The Underestimated Importance of Lighting in India
-</h1>
-        <div className="text-light md -1 px-3">----may27,2024 </div>
-      </div>
-      <div className="col">
-        <img
-          src="https://jovoindia.com/images/Common%20Mistakes%20to%20Avoid%20in%20Home%20Lighting.jpg"
-          alt="blogimage"
-          className="img-fluid rounded"
-          style={{ height: '400px', objectFit: 'cover', width: '100%' }}
-        />
-        <h1 className="text-light fs-4 py-3">Common Mistakes to Avoid in Home Lighting</h1>
-        <div className="text-light md-1 px-3">-----june 22,2023</div>
-      </div>
-    </div>
-  </div>
-</section>  */}
+<BlogSection/>  
     </>
   );
 }

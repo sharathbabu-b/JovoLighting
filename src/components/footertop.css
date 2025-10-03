@@ -7,7 +7,7 @@
   line-height: 1.1rem;
 }
 
-/* Floating buttons */
+
 .floating-btn {
   width: 50px;
   height: 50px;
@@ -34,7 +34,7 @@
   color: #fff;
 }
 
-/* Responsive Typography */
+
 @media (max-width: 992px) {
   .footer-top h2 {
     font-size: 1.75rem;

@@ -59,7 +59,7 @@ const handleSubmit = async (e) => {
       <section className="pt-5 mt-5 p-5">
    <div className="container py-4 px-3">
   <div className="d-flex flex-column flex-sm-row align-items-center justify-content-start">
-    {/* Icon */}
+  
     <img
       src="https://jovoindia.com/images/674bf99cab62ac5800486c20_Subtitle%20Icon.svg"
       alt="icon"
@@ -67,15 +67,15 @@ const handleSubmit = async (e) => {
       style={{ width: "30px", height: "50px", minWidth: "30px" }}
     />
 
-    {/* Text with link */}
+    
     <div className="text-center text-sm-start">
       <Link to="/" className="text-black text-decoration-none">
         Home
-      </Link>{" "}
+      </Link>
       / Contact Us
     </div>
 
-    {/* Divider line grows and appears on larger screens */}
+    
     <div className="flex-grow-1 border-bottom ms-sm-3 mt-3 mt-sm-0"></div>
   </div>
 </div>
@@ -89,10 +89,10 @@ const handleSubmit = async (e) => {
           </h2>
         </div>
 
-        {/* Contact Form & Image */}
+        
         <div className="container-fluid my-5 mt-3">
           <div className="row justify-content-center align-items-center">
-            {/* Left Image */}
+        
             <div className="col-md-5 d-flex justify-content-center mb-4 mb-md-0">
               <img
                 src="https://jovoindia.com/images/contact-banner-image.jpg"
@@ -107,10 +107,10 @@ const handleSubmit = async (e) => {
               />
             </div>
 
-            {/* Form */}
+          
             <div className="col-md-6 px-4 px-md-5 py-4 py-md-5">
               <form onSubmit={handleSubmit}>
-                {/* Full Name & Email */}
+            
                 <div className="row mb-4">
                   <div className="col-12 col-md-6 mb-3 mb-md-0">
                     <label htmlFor="fullName" className="form-label">
@@ -143,7 +143,7 @@ const handleSubmit = async (e) => {
                   </div>
                 </div>
 
-                {/* Phone & Subject */}
+               
                 <div className="row mb-4">
                   <div className="col-12 col-md-6 mb-3 mb-md-0">
                     <label htmlFor="phone" className="form-label">
@@ -175,7 +175,7 @@ const handleSubmit = async (e) => {
                   </div>
                 </div>
 
-                {/* Message */}
+               
                 <div className="mb-4">
                   <label htmlFor="message" className="form-label">
                     Your Message*
@@ -192,7 +192,7 @@ const handleSubmit = async (e) => {
                   {errors.fullname && <div className="invalid-feedback">{errors.message}</div>}
                 </div>
 
-                {/* Submit Button */}
+                
                 <button
                   type="submit"
                   className="btn btn-dark px-5 py-2 rounded-pill w-100 w-md-auto"
@@ -205,11 +205,11 @@ const handleSubmit = async (e) => {
         </div>
       </section>
 
-      {/* Contact Info Section */}
+     
       <div className="bg-dark text-white py-5">
         <div className="container">
           <div className="d-flex flex-column flex-md-row flex-wrap gap-4 text-center text-md-start align-items-center justify-content-center">
-            {/* Email */}
+            
             <div className="d-flex align-items-center px-3">
               <FaEnvelope size={30} className="text-white border rounded-circle p-2 me-3" />
               <div>
@@ -218,7 +218,7 @@ const handleSubmit = async (e) => {
               </div>
             </div>
 
-            {/* Phone */}
+           
             <div className="d-flex align-items-center px-3">
               <FaPhone size={30} className="text-white border rounded-circle p-2 me-3" />
               <div>
@@ -227,7 +227,6 @@ const handleSubmit = async (e) => {
               </div>
             </div>
 
-            {/* Location */}
             <div className="d-flex align-items-center px-3">
               <FaMapMarkerAlt size={30} className="text-white border rounded-circle p-2 me-3" />
               <div>
@@ -242,7 +241,7 @@ const handleSubmit = async (e) => {
         </div>
       </div>
 
-      {/* Location Section */}
+    
       <div className="container d-flex align-items-center mb-2 py-5 px-3 px-md-5">
         <img
           src="https://jovoindia.com/images/674bf99cab62ac5800486c20_Subtitle%20Icon.svg"
@@ -265,17 +264,16 @@ const handleSubmit = async (e) => {
         <MapSection />
       </div>
 
-      {/* FAQs */}
       <div className="py-4 px-3 px-md-5">
         <FAQs />
       </div>
 
-      {/* Hero Section with Video */}
+     
       <section
         className="px-3 hero-section position-relative w-100"
         style={{ height: "440px" }}
       >
-        {/* Background video */}
+      
         <video
           autoPlay
           loop
@@ -295,7 +293,7 @@ const handleSubmit = async (e) => {
           }}
         ></div>
 
-        {/* Overlay content */}
+      
         <div className="container-fluid h-100 d-flex flex-column justify-content-center text-white py-5 text-center text-md-start">
           <div className="col-lg-6 col-md-8">
             <h1 className="mb-4 fw-semibold">What lighting products do you sell?</h1>

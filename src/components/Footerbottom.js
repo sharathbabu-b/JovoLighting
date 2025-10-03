@@ -1,8 +1,9 @@
 import FooterTop from "./Footertop"
 import jovipng from "../assets/primary-logo.png";
-// import callIcon from "../assets/call-icon.png"
+
 import {FaFacebookF,FaYoutube,FaInstagram,FaLinkedinIn, FaPinterestP} from "react-icons/fa"
 import "./footerbottom.css"
+import { Link } from "react-router-dom";
 
 export default function FooterBottom(){
     return (
@@ -12,29 +13,29 @@ export default function FooterBottom(){
             <img  style={{ height: "100px" }} src={jovipng} alt="logo"/>
                   <h3 className="text-white text-center fontsize-10px" >Copyright©JÖVÖINDIA</h3>
                  <div className=" d-flex justify-content-center gap-3  py-3">
-                  <a  href="https://www.facebook.com/jovoindia/" className="d-flex justify-content-center align-items-center rounded-circle border border-light text-light" style={{ width: "40px", height: "40px", fontSize: "18px" }}>
+                  <Link to="/https://www.facebook.com/jovoindia" className="d-flex justify-content-center align-items-center rounded-circle border border-light text-light" style={{ width: "40px", height: "40px", fontSize: "18px" }}>
               <FaFacebookF />
-            </a>
+            </Link>
 
-            <a href="https://www.youtube.com/channel/UCOyUzihzuxDJqNyuQFqR72w" className="d-flex justify-content-center align-items-center rounded-circle border border-light text-light" style={{ width: "40px", height: "40px", fontSize: "18px" }}
+            <Link to="/https://www.youtube.com/channel/UCOyUzihzuxDJqNyuQFqR72w" className="d-flex justify-content-center align-items-center rounded-circle border border-light text-light" style={{ width: "40px", height: "40px", fontSize: "18px" }}
             >
               <FaYoutube />
-            </a>
+            </Link>
 
-            <a href="https://www.instagram.com/JOVOINDIA/" className="d-flex justify-content-center align-items-center rounded-circle border border-light text-light"style={{ width: "40px", height: "40px", fontSize: "18px" }}
+            <Link to="/https://www.instagram.com/JOVOINDIA/" className="d-flex justify-content-center align-items-center rounded-circle border border-light text-light"style={{ width: "40px", height: "40px", fontSize: "18px" }}
             >
               <FaInstagram />
-            </a>
+            </Link>
             
-              <a href="https://www.linkedin.com/company/j%C3%B6v%C3%B6-india/" className="d-flex justify-content-center align-items-center rounded-circle border border-light text-light" style={{ width: "40px", height: "40px", fontSize: "18px" }}
+              <Link to="/https://www.linkedin.com/company/j%C3%B6v%C3%B6-india/" className="d-flex justify-content-center align-items-center rounded-circle border border-light text-light" style={{ width: "40px", height: "40px", fontSize: "18px" }}
             >
               <FaLinkedinIn />
-            </a>
+            </Link>
 
-            <a href="hhttps://in.pinterest.com/jovoindia/" className="d-flex justify-content-center align-items-center rounded-circle border border-light text-light" style={{ width: "40px", height: "40px", fontSize: "18px" }}
+            <Link to="/hhttps://in.pinterest.com/jovoindia/" className="d-flex justify-content-center align-items-center rounded-circle border border-light text-light" style={{ width: "40px", height: "40px", fontSize: "18px" }}
             >
               <FaPinterestP />
-            </a>       
+            </Link>       
                  </div>
         </div>
    

@@ -4,7 +4,7 @@ import "./intropage.css"
 export default function Homebanner() {
   return (
     <section className="position-relative w-100 vh-100 overflow-hidden">
-      {/* Background Video */}
+      
       <video
         className="position-absolute top-0 start-0 w-100 h-100"
         autoPlay
@@ -17,7 +17,7 @@ export default function Homebanner() {
         Your browser does not support the video tag.
       </video>
 
-      {/* Gradient Overlay */}
+     
       <div
         className=" background-image position-absolute top-0 start-0 w-100 h-100"
         style={{
@@ -27,7 +27,7 @@ export default function Homebanner() {
         }}
       ></div>
 
-      {/* Centered Text */}
+     
       <div className="position-absolute top-50 start-50 translate-middle text-center text-white z-2 px-3">
         <h1 className="dispaly-1 gradient-heading mg-bottom-32px padding-bottom m-20">
           Innovating Spaces with Smart Lighting

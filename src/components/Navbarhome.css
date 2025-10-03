@@ -1,4 +1,4 @@
-/* Base styles - Desktop first */
+
 .intro-header-wrapper {
   width: 100%;
   background-color: #020000;
@@ -23,13 +23,13 @@
   height: 60px;
 }
 
-/* Left menu & hamburger container */
+
 .intro-header-left-side {
   display: flex;
   align-items: center;
 }
 
-/* Nav menu wrapper */
+
 .intro-header-nav-menu-wrapper {
   display: flex;
 }
@@ -57,7 +57,7 @@
   color: #0077ff;
 }
 
-/* Logo center */
+
 .intro-header-middle {
   flex: 1;
   display: flex;
@@ -69,13 +69,13 @@
   width: auto;
 }
 
-/* Right side nav */
+
 .intro-header-right-side {
   display: flex;
   align-items: center;
 }
 
-/* Hidden/Show helpers */
+
 .hidden-on-tablet {
   display: block;
 }
@@ -84,14 +84,14 @@
   display: none;
 }
 
-/* Hamburger menu - hidden by default */
+
 .intro-hamburger-menu-wrapper {
   cursor: pointer;
   width: 30px;
   height: 22px;
   position: relative;
   margin-left: 15px;
-  display: none; /* hidden on desktop */
+  display: none; 
   flex-direction: column;
   justify-content: space-between;
 }
@@ -103,7 +103,7 @@
   transition: all 0.3s ease;
 }
 
-/* Hamburger animation when active */
+
 .intro-hamburger-menu-wrapper.active .top {
   transform: translateY(9px) rotate(45deg);
 }
@@ -112,30 +112,30 @@
   transform: translateY(-9px) rotate(-45deg);
 }
 
-/* Responsive for Tablet and below */
+
 @media (max-width: 991px) {
-  /* Hide desktop nav items */
+
   .hidden-on-tablet {
     display: none !important;
   }
-  /* Show tablet-only nav items */
+ 
   .show-in-tablet {
     display: block;
   }
 
   
   
-  /* Hide right side nav */
+  
   .intro-header-right-side {
     display: none;
   }
 
-  /* Show hamburger */
+  
   .intro-hamburger-menu-wrapper {
     display: flex;
   }
 
-  /* Nav menu dropdown */
+  
   .intro-header-nav-menu-wrapper {
     position: absolute;
     top: 60px;
@@ -150,13 +150,13 @@
     z-index: 999;
   }
 
-  /* Open state for dropdown */
+  
   .intro-header-nav-menu-wrapper.open {
     max-height: 200px; /* enough for menu items */
     margin-top: 4px;
   }
 
-  /* Vertical list for nav */
+  
   .intro-header-nav-menu-list {
     flex-direction: column;
   }
@@ -167,19 +167,19 @@
   }
 }
 
-/* Desktop and up */
+
 @media (min-width: 992px) {
-  /* Hide hamburger on desktop */
+
   .intro-hamburger-menu-wrapper {
     display: none;
   }
 
-  /* Show hidden elements */
+ 
   .hidden-on-tablet {
     display: block !important;
   }
 
-  /* Hide tablet-only */
+ 
   .show-in-tablet {
     display: none;
   }

@@ -9,12 +9,12 @@ export default function FooterTop() {
       <div className="container">
         <div className="row align-items-center">
           
-          {/* Left Column */}
+          
           <div className="col-lg-6 mb-4 mb-lg-0">
             <h2 className="fw-bold" style={{fontFamily:"Montserrat Alternates, sans-serif"}}>Where your next breakthrough begins</h2>
           </div>
 
-          {/* Right Column */}
+       
           <div className="col-lg-6">
             <p className="lead" style={{textAlign:"justify",wordSpacing:"normal"}}>
               Facilitating seamless integration across platforms,we're here to
@@ -48,7 +48,7 @@ export default function FooterTop() {
         </div>
       </div>
 
-      {/* Floating Buttons */}
+      
       <Link to="/tel:+917406000700">
         <button className="floating-btn phone-btn">
           <FaPhoneAlt size={24} />

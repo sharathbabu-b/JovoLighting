@@ -23,7 +23,6 @@ export default function Whitenavbar() {
   <div className="main-header-container w-container1">
     <div className="main-header-content">
 
-      {/* Right Side Nav (hidden on tablet) */}
       <div className="nav-section-right hide-on-tablet">
         <ul className="nav-menu-list">
           <li className="nav-list-item left">
@@ -38,14 +37,14 @@ export default function Whitenavbar() {
         </ul>
       </div>
 
-      {/* Logo in the middle */}
+      
       <div className="logo-center">
         <Link to="/" className="logo-link w-nav-brand">
           <img src={blacklogo} alt="jovo logo" className="brand-logo" />
         </Link>
       </div>
 
-      {/* Right Side Nav (hidden on tablet) */}
+     
       <div className="nav-section-right hide-secondary-on-tablet">
         <ul className="nav-menu-list">
           <li className="nav-list-item left" style={{ marginTop: "10px" }}>
@@ -61,7 +60,7 @@ export default function Whitenavbar() {
         </ul>
       </div>
 
-      {/* Left Side Menu & Hamburger */}
+    
       <div className="nav-section-left">
         <nav
           role="navigation"
@@ -89,7 +88,7 @@ export default function Whitenavbar() {
           </ul>
         </nav>
 
-        {/* Hamburger Menu */}
+      
         <div
           className={`hamburger-toggle w-nav-button ${menuOpen ? "active" : ""}`}
           onClick={toggleMenu}

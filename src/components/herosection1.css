@@ -1,4 +1,4 @@
-/* Import Montserrat font */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 :root {
@@ -61,7 +61,6 @@ h1 {
   padding-bottom: 20px;
 }
 
-/* MEDIA QUERIES */
 @media screen and (max-width: 1024px) {
   .display-1 {
     font-size: 60px;

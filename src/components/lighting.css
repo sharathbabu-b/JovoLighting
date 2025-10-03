@@ -1,5 +1,5 @@
 body {
-  padding-top: 80px; /* adjust to navbar height */
+  padding-top: 80px; 
 }
 body,
 h1, h2, h3, h4, h5, h6,
@@ -26,7 +26,7 @@ p, a, li, button, input, textarea, div {
   height: 40px;
 }
 
-/* Small devices (≥576px) */
+
 @media (min-width: 576px) {
   .why-choose-section h2.display-3 {
     font-size: 2.5rem;
@@ -38,7 +38,7 @@ p, a, li, button, input, textarea, div {
   }
 }
 
-/* Medium devices (≥768px) */
+
 @media (min-width: 768px) {
   .why-choose-section {
     padding: 4rem 2rem;
@@ -53,7 +53,7 @@ p, a, li, button, input, textarea, div {
   }
 }
 
-/* Large devices (≥992px) */
+
 @media (min-width: 992px) {
   .why-choose-section h2.display-3 {
     font-size: 3.2rem;
@@ -65,7 +65,7 @@ p, a, li, button, input, textarea, div {
   }
 }
 
-/* Extra large devices (≥1200px) */
+
 @media (min-width: 1200px) {
   .why-choose-section {
     padding: 5rem 4rem;
@@ -76,13 +76,7 @@ p, a, li, button, input, textarea, div {
   }
 }
 
-/* .gradient-text {
-  background-image: linear-gradient(138deg, transparent, #6c757d 18%, #ffffff 72%, #ffffff 86%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent; 
-} */
+
 
 
 .tag-line-animated-text {
@@ -102,13 +96,13 @@ p, a, li, button, input, textarea, div {
 .btn-custom {
   background-color: #d2caa8;
   border: 2px solid #d2caa8;
-  color: #000; /* Change to #fff if you want white text */
+  color: #000;
   transition: all 0.3s ease;
 }
 .btn-banner{
      background-color: #fff;
   padding: 3px;
-  color: #000; /* Change to #fff if you want white text */
+  color: #000; 
   transition: all 0.3s ease;
     
 }
@@ -118,21 +112,21 @@ p, a, li, button, input, textarea, div {
   color: #000;
 }
 
-/* Make carousel arrows white and bigger */
+
 .custom-arrow {
-  filter: invert(1); /* makes Bootstrap default icons white */
+  filter: invert(1); 
   width: 70px;
   height: 60px;
 }
 
-/* Position arrows vertically center */
+
 .carousel-control-prev,
 .carousel-control-next {
   top: 50%;
   transform: translateY(-50%);
 }
 
-/* Customize indicators (dots) */
+
 .carousel-indicators [data-bs-target] {
   background-color: #fff;
   width: 10px;
@@ -147,18 +141,18 @@ p, a, li, button, input, textarea, div {
 }
 
 
-/* greyscale color */
+
 .hover-img {
   transition: transform 0.4s ease;
 }
 .hover-img:hover {
-  transform: scale(1.1); /* zoom in */
+  transform: scale(1.1); 
 }
 
 .container {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto; /* optional: center horizontally */
+    margin: 0 auto; 
     padding-left: 15px;
     padding-right: 15px;
 }

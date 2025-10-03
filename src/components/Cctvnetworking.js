@@ -32,33 +32,7 @@ export default function CCtvNetworking(){
       </div>
     </section>
   
-         {/* <section className="client-logos-section">
-              <div className="client-logos-container">
-                <div className="client-logos-track" id="clientTrack">
-                  <div className="logo-strip">
-                     <img src="https://jovoindia.com/images/automation-icon/mk-sound-logo.png" alt="Client 1" className="client-logo" />
-              <img src="https://jovoindia.com/images/automation-icon/av-logic-logo.png" alt="Client 2" className="client-logo" />
-              <img src="https://jovoindia.com/images/automation-icon/ascendo-logo.png" alt="Client 3" className="client-logo" />
-              <img src="https://jovoindia.com/images/automation-icon/speaker-craft-logo.png" alt="Client 4" className="client-logo" />
-              <img src="https://jovoindia.com/images/automation-icon/pro-fix-logo.png" alt="Client 5" className="client-logo" />
-              <img src="https://jovoindia.com/images/automation-icon/little-nap-logo.png" alt="Client 6" className="client-logo" />
-              <img src="https://jovoindia.com/images/automation-icon/tyba-logo.png" alt="Client 7" className="client-logo" />
-              <img src="https://jovoindia.com/images/automation-icon/casa-tunes-logo.png" alt="Client 8" className="client-logo" />
-                  </div>
-                  <div className="logo-strip">
-                   <img src="https://jovoindia.com/images/automation-icon/mk-sound-logo.png" alt="Client 1" className="client-logo" />
-              <img src="https://jovoindia.com/images/automation-icon/av-logic-logo.png" alt="Client 2" className="client-logo" />
-              <img src="https://jovoindia.com/images/automation-icon/ascendo-logo.png" alt="Client 3" className="client-logo" />
-              <img src="https://jovoindia.com/images/automation-icon/speaker-craft-logo.png" alt="Client 4" className="client-logo" />
-              <img src="https://jovoindia.com/images/automation-icon/pro-fix-logo.png" alt="Client 5" className="client-logo" />
-              <img src="https://jovoindia.com/images/automation-icon/little-nap-logo.png" alt="Client 6" className="client-logo" />
-              <img src="https://jovoindia.com/images/automation-icon/tyba-logo.png" alt="Client 7" className="client-logo" />
-              <img src="https://jovoindia.com/images/automation-icon/casa-tunes-logo.png" alt="Client 8" className="client-logo" />
-                  </div>
-                </div>
-              </div>
-            </section>
-         */}
+         
        <section className="automation-section4">
   <div
     className="container"

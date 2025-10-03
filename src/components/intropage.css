@@ -7,19 +7,19 @@ video {
 }
 
 .dispaly-1{
-  font-size: xx-large;
+  font-size: 80px;
 }
 .dispaly-1.gradient-heading{
   background-clip: text;
   font-family: Montserrat Alternates, sans-serif;
   font-weight: semibold;
-  font-size: 50px;
+  font-size: 70px;
 
   
 
 }
 .main-content {
-  padding-top: 30px; /* Adjust based on your navbar height */
+  padding-top: 30px; 
 }
 
 
@@ -27,6 +27,7 @@ video {
     .display-1.gradient-heading {
         background-image: linear-gradient(138deg, transparent, var(--neutral--100) 20%, var(--neutral--100) 70%, transparent);
             -webkit-text-fill-color: transparent;
+            font-size: x-large;
     }
 }
     @media screen and (max-width: 767px) {

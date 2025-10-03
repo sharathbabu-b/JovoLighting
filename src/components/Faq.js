@@ -62,7 +62,7 @@ export default function FAQSection() {
     <section className="section-gap-bottom  py-3">
       <div className="container-default">
         <div className="faq-wrapper">
-          {/* Top Section with Icon + Subtitle */}
+          
           <div className="section-top text-center mb-4 fs-5">
             <div className="d-flex align-items-center justify-content-center mb-2 mt-3">
               <img
@@ -77,7 +77,7 @@ export default function FAQSection() {
           <div className="d-flex  justify-content-center py-4 ms-2">
             <h3 className="fw-semi display-3 fs-2">Frequently Asked Questions</h3></div>
 
-          {/* FAQ Items */}
+        
           <div className="faq-items-wrapper ">
             {faqData.map((item, index) => (
               <div key={index} className="faq-item">

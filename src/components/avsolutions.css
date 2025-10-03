@@ -1,17 +1,14 @@
-/* Import Montserrat Alternates font */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap');
 
-/* Apply the font to elements with this class */
+
 .automation-font {
   font-family: 'Montserrat Alternates', sans-serif;
 }
 
-/* ============================= */
-/*        AV SOLUTIONS CSS       */
-/* ============================= */
 
 .automation-section3 {
-  background: #121212; /* dark background */
+  background: #121212; 
   color: #fff;
   min-height: 100vh;
   display: flex;
@@ -39,7 +36,7 @@
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
   margin-bottom: 20px;
-  /* font-family inherited from .automation-font */
+  
 }
 
 .automation-section3 .automation-paragraph {
@@ -48,7 +45,7 @@
   max-width: 800px;
   margin: 0 auto;
   text-align: justify;
-  /* font-family inherited from .automation-font */
+  
 }
 
 @keyframes bgSlideAV {
@@ -58,9 +55,7 @@
   100% { background-image: url("https://jovoindia.com/images/theatre.jpg"); }
 }
 
-/* Responsive styling */
 
-/* Tablet */
 @media screen and (max-width: 1024px) {
   .automation-section3 {
     padding: 50px 15px;
@@ -77,7 +72,6 @@
   }
 }
 
-/* Mobile */
 @media screen and (max-width: 767px) {
   .automation-section3 {
     padding: 40px 10px;

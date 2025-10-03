@@ -1,10 +1,10 @@
-/* footerbottom.css */
+
 body{
   overflow: hidden;
 }
-/* ✅ Default (Desktop / large screens) */
+
 .dark-line {
-  background-color: #000; /* ensure black background */
+  background-color: #000; 
 }
 
 .dark-line img {
@@ -14,7 +14,7 @@ body{
 .dark-line h3 {
   font-size: 15px;
   margin: 0;
-  white-space: nowrap; /* prevent breaking into weird lines */
+  white-space: nowrap; 
 }
 
 .dark-line .d-flex a {
@@ -23,25 +23,23 @@ body{
   font-size: 18px;
 }
 
-/* 📱 Mobile (max-width: 576px) */
+
 @media (max-width: 576px) {
   .dark-line {
-    flex-direction: column;   /* stack vertically */
+    flex-direction: column;   
     text-align: center;
     gap: 12px;
   }
 
   .dark-line img {
-    height: 70px;             /* smaller logo */
+    height: 70px;             
   }
 
   .dark-line h3 {
-    font-size: 13px;          /* smaller copyright text */
-  }
+    font-size: 13px;        
 
   .dark-line .d-flex {
-    flex-wrap: wrap;          /* wrap icons neatly */
-    gap: 10px;
+    flex-wrap: wrap;          
   }
 
   .dark-line .d-flex a {
@@ -51,10 +49,9 @@ body{
   }
 }
 
-/* 📲 Tablet (577px – 768px) */
 @media (min-width: 577px) and (max-width: 768px) {
   .dark-line {
-    flex-direction: column; /* still stack */
+    flex-direction: column; 
     text-align: center;
     gap: 14px;
   }
@@ -74,10 +71,10 @@ body{
   }
 }
 
-/* 💻 Large PC screens (min-width: 1200px) */
+
 @media (min-width: 1200px) {
   .dark-line img {
-    height: 110px; /* bigger logo on very large screens */
+    height: 110px; 
   }
 
   .dark-line h3 {
@@ -89,4 +86,4 @@ body{
     height: 45px;
     font-size: 20px;
   }
-}
+}}

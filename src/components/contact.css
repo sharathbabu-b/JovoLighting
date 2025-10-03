@@ -1,8 +1,8 @@
 .contact-info-separator {
-  background-color: #fff;   /* white line */
+  background-color: #fff;   
   width: 2px;
-  height: 40px;             /* fixed height so it’s visible */
-  margin: 0 20px;           /* spacing around */
+  height: 40px;             
+  margin: 0 20px;          
 }
 
 input.form-control {
@@ -11,7 +11,7 @@ input.form-control {
   font-size: 16px;
   border-radius: 50px;
 }
-/* form.css */
+
 form {
   font-size: 16px;
 }
@@ -87,15 +87,14 @@ button.btn {
 
 @media (max-width: 767px) {
   .contact-info-separator {
-    display: none;          /* hide on mobile so stacked layout looks clean */
-  }
+    display: none;          
 }
 .cta-video-wrapper {
   
   top: 0;
   left: 0;
   width: 100%;
-  height: 50%;   /* Full section height */
+  height: 50%;   
   z-index: 1;
   overflow: hidden;
 }
@@ -103,9 +102,10 @@ button.btn {
 .cta-video-wrapper video {
   width: 100%;
   height: 440px;
-  object-fit: cover; /* cover instead of contain for no black bars */
+  object-fit: cover; 
 }
 .cta-button-wrapper a:hover svg {
   transform: translateX(4px);
   transition: transform 0.3s ease;
+}
 }
